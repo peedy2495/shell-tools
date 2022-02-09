@@ -12,7 +12,7 @@ Content:
 
 
 ***CheckCmdReqirements [cmd1] [cmd2] ... [cmdn]***  
-Check all reqired shell commands to perform sone previous actions;
+Check all reqired shell commands to perform some previous actions;
 <br /><br />
 
 ### **toolz_configs.sh :** 

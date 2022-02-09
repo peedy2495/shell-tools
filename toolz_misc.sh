@@ -1,7 +1,7 @@
 ## My little library miscellaneous helpers
 ## created by https://github.com/peedy2495
 
-# Check all reqired shell commands to perform sone previous actions;
+# Check all reqired shell commands to perform some previous actions;
 # CheckCmdReqirements [cmd1] [cmd2] ... [cmdn]
 # Returns: exit status; 0 = all commands found; 1 = one or more of given commands not found
 CheckCmdReqirements() {
