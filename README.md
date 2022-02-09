@@ -54,7 +54,7 @@ Get network address of given IP and CDIR prefix;
 ### **toolz_github.sh :** 
 
 ***CountReleases [repository]***  
-Get total nuber of releses
+Get total nuber of releases
 
 ***GetAllReleases [repository]***  
 Get all release-versions

@@ -12,7 +12,7 @@ if [ $? -ne 0 ]; then
     return 1
 fi
 
-#Get total nuber of releses
+#Get total nuber of releases
 #CountReleases [repository]
 GH_CountReleases() {
     curl -sL https://api.github.com/repos/$1/releases | jq '. | length'
