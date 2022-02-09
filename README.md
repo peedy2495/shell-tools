@@ -36,7 +36,7 @@ Enable (comment out) all matched keys in file;
 Set value of a key separated with '=' within a configfile;
 <br /><br />
 
-### **toolz_configs.sh :** 
+### **toolz_network.sh :** 
 
 ***WaitForHost [ip/hostname(default:localhost)] [port(default:80/http)] [protocol(default:tcp)] [prefixstring]***  
 Waiting for destination host on port number;
