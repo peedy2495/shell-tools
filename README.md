@@ -49,3 +49,22 @@ Get broadcast address of given IP and CDIR prefix;
 
 ***GetNetwork [ip] [CDIR-prefix]***  
 Get network address of given IP and CDIR prefix;
+<br /><br />
+
+### **toolz_github.sh :** 
+
+***CountReleases [repository]***  
+Get total nuber of releses
+
+***GetAllReleases [repository]***  
+Get all release-versions
+
+***CheckRelease [repository] [releaseversion]***  
+Check, if a given release is available  
+returncode: 0=existing 1=failed
+
+***GetLatestVersion [repository]***  
+Get latest version number
+
+***GetFileDownloadURL [repository] [filename] [releasenumber] (optional)***  
+Get downloadurl of a filerelease; without releasenumber = latest
