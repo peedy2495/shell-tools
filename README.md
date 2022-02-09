@@ -1,6 +1,6 @@
 ## Welcome to Shell Toolz
 
-This is my favourite collection of Functions.
+This is my favourite collection of functions.
 They are organized in themes ("libraries").
 
 just source needed lib in your Project/Workflow.
@@ -41,7 +41,7 @@ Set value of a key separated with '=' within a configfile;
 ***WaitForHost [ip/hostname(default:localhost)] [port(default:80/http)] [protocol(default:tcp)] [prefixstring]***  
 Waiting for destination host on port number;
 
-***GetNetmask [CDIR-prefix] ***  
+***GetNetmask [CDIR-prefix]***  
 Get GetNetmask from CDIR prefix;
 
 ***GetBroadcast [ip] [CDIR-prefix]***  
