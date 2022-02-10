@@ -18,7 +18,7 @@ Check all reqired shell commands to perform some previous actions;
 ### **toolz_configs.sh :** 
 
 ***ReplVar [varname] [filepath]***  
-replace predefined shell variablename found in a file with it's content. To pass slashes you have to mark them with backslashes like: ReplVar FOO '\\/usr\\/var\\/lib'
+replace predefined shell variablename found in a file with it's content.
 
 ***PlaceBefore [matchstring] [content] [filepath]***  
 Insert text into a file before found match
