@@ -18,19 +18,19 @@ Check all reqired shell commands to perform some previous actions;
 ### **toolz_configs.sh :** 
 
 ***ReplVar [varname] [filepath]***  
-replace variablename found in a file with it's content;
+replace predefined shell variablename found in a file with it's content. To pass slashes you have to mark them witch backslashes like: ReplVar FOO '\/usr\/var\/lib'
 
 ***PlaceBefore [matchstring] [content] [filepath]***  
-Insert text into a file before found match;
+Insert text into a file before found match
 
 ***PlaceAfter [matchstring] [content] [filepath]***  
-Insert text into a file after found match;
+Insert text into a file after found match
 
 ***KeyDisable [key] [filepath]***  
-Disable (comment) all matched keys in file;
+Disable (comment) all matched keys in file
 
 ***KeyEnable [key] [filepath]***  
-Enable (comment out) all matched keys in file;
+Enable (comment out) all matched keys in file
 
 ***KeySet [key] [value] [filepath]***  
 Set value of a key separated with '=' within a configfile;
@@ -42,13 +42,13 @@ Set value of a key separated with '=' within a configfile;
 Waiting for destination host on port number;
 
 ***GetNetmask [CDIR-prefix]***  
-Get GetNetmask from CDIR prefix;
+Get GetNetmask from CDIR prefix
 
 ***GetBroadcast [ip] [CDIR-prefix]***  
-Get broadcast address of given IP and CDIR prefix;
+Get broadcast address of given IP and CDIR prefix
 
 ***GetNetwork [ip] [CDIR-prefix]***  
-Get network address of given IP and CDIR prefix;
+Get network address of given IP and CDIR prefix
 <br /><br />
 
 ### **toolz_github.sh :** 
