@@ -12,22 +12,22 @@ if [ $? -ne 0 ]; then
     return 1
 fi
 
-#Get total nuber of releases
-#CountReleases [repository]
+# Get total nuber of releases;
+# CountReleases [repository]
 GH_CountReleases() {
     curl -sL https://api.github.com/repos/$1/releases | jq '. | length'
 }
 
-#Get all release-versions
-#GetAllReleases [repository]
+# Get all release-versions;
+# GetAllReleases [repository]
 GH_GetAllReleases() {
     curl -sL https://api.github.com/repos/$1/releases | jq -r '.[].tag_name' | tr '\n' ' '
 }
 
 
-#Check, if a given release is available
-#CheckRelease [repository] [releaseversion]
-#returncode: 0=existing 1=failed
+# Check, if a given release is available;
+# returncode: 0=existing 1=failed;
+# CheckRelease [repository] [releaseversion];
 GH_CheckRelease() {
     RELEASES=$(GH_GetAllReleases $1 2>/dev/null)
     if [[ "${RELEASES[@]}" =~ $2 ]]; then
@@ -37,14 +37,14 @@ GH_CheckRelease() {
     fi
 }
 
-#Get latest version number
-#GetLatestVersion [repository]
+# Get latest version number;
+# GetLatestVersion [repository]
 GH_GetLatestVersion() {
     curl -sL https://api.github.com/repos/$1/releases/latest | jq -r '.tag_name'
 }
 
-#Get downloadurl of a filerelease; without releasenumber = latest
-#GetFileDownloadURL [repository] [filename] [releasenumber](optional)
+# Get downloadurl of a filerelease; without releasenumber = latest;
+# GetFileDownloadURL [repository] [filename] [releasenumber](optional)
 GH_GetFileDownloadURL() {
     if [[ -z "$var" ]]; then
         VER="$(GH_GetLatestVersion $1)"

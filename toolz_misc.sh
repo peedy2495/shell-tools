@@ -2,8 +2,8 @@
 ## created by https://github.com/peedy2495
 
 # Check all reqired shell commands to perform some previous actions;
+# returncode 0=all commands found; 1=one or more of given commands not found;
 # CheckCmdReqirements [cmd1] [cmd2] ... [cmdn]
-# Returns: exit status; 0 = all commands found; 1 = one or more of given commands not found
 CheckCmdReqirements() {
     RET=0
     for CMD in "$@"; do

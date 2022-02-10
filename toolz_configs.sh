@@ -1,10 +1,11 @@
 ## My little library for maniplulating configuration files
 ## created by https://github.com/peedy2495
 
-# replace variablename found in a file with it's content;
+# replace predefined shell variablename found in a file with it's content. To pass slashes you have to mark them with backslashes like: ReplVar FOO '\/usr\/var\/lib';
 # ReplVar [varname] [filepath]
 ReplVar() {
     content=$(eval "echo \${${1}}")
+    echo $content
     sed -i "s/$1/$content/g" $2
 }
 
