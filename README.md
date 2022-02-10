@@ -1,8 +1,8 @@
-## Welcome to Shell Toolz
+# Shell-Toolz
+My collection of shell-functions
 
-This is my favourite collection of functions.
-They are organized in themes ("libraries").
 
+They're organized in themes ("libraries").
 just source needed lib in your Project/Workflow.
 
 Content:
