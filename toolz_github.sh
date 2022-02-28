@@ -30,7 +30,7 @@ GH_GetAllReleases() {
 # CheckRelease [repository] [releaseversion];
 GH_CheckRelease() {
     RELEASES=$(GH_GetAllReleases $1 2>/dev/null)
-    if [[ "${RELEASES[@]}" =~ $2 ]]; then
+    if [[ "${RELEASES[@]}" =~ "$2" ]]; then
         return 0
     else
         return 1
